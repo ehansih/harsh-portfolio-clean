@@ -196,3 +196,18 @@ Telecom Security · 5G Architecture · Product Strategy · AI Systems
 - LinkedIn: [linkedin.com/in/harsh-vardhan-75865121](https://www.linkedin.com/in/harsh-vardhan-75865121/)
 - GitHub: [github.com/ehansih](https://github.com/ehansih)
 - Medium: [medium.com/@vardhan.chauhan](https://medium.com/@vardhan.chauhan)
+
+## Security
+
+This site is hardened with the following HTTP security headers, configured via `vercel.json`:
+
+| Header | Value |
+|--------|-------|
+| `X-Frame-Options` | `SAMEORIGIN` — prevents clickjacking |
+| `X-Content-Type-Options` | `nosniff` — prevents MIME sniffing |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` |
+| `Permissions-Policy` | Camera, mic, geolocation, payment blocked |
+| `X-XSS-Protection` | `1; mode=block` |
+| `Content-Security-Policy` | Restricts script/style/font sources |
+
+HTTPS and HSTS are enforced automatically by Vercel.
