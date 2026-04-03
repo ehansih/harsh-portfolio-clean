@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
 </head>
 <body>
 
@@ -38,23 +39,29 @@
 
   <!-- HERO -->
   <section class="hero shell" id="top">
-    <div class="hero-eyebrow">
-      <span class="tag">Telecom Security</span>
-      <span class="tag">5G Architecture</span>
-      <span class="tag">Product Strategy</span>
-      <span class="tag">AI Systems</span>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="tag">Telecom Security</span>
+        <span class="tag">5G Architecture</span>
+        <span class="tag">Product Strategy</span>
+        <span class="tag">AI Systems</span>
+      </div>
+      <h1 class="hero-headline">
+        Securing networks.<br>
+        <span class="dim">Shaping what ships next.</span>
+      </h1>
+      <p class="hero-sub">
+        16+ years building, defending, and leading across SS7, IMS, VoLTE, and 5G core.
+        I work at the intersection of protocol depth, product thinking, and carrier-grade delivery.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Start a conversation</a>
+        <a href="#projects" class="btn btn-ghost">View projects</a>
+      </div>
     </div>
-    <h1 class="hero-headline">
-      Securing networks.<br>
-      <span class="dim">Shaping what ships next.</span>
-    </h1>
-    <p class="hero-sub">
-      16+ years building, defending, and leading across SS7, IMS, VoLTE, and 5G core.
-      I work at the intersection of protocol depth, product thinking, and carrier-grade delivery.
-    </p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn btn-primary">Start a conversation</a>
-      <a href="#projects" class="btn btn-ghost">View projects</a>
+    <div class="hero-globe-wrap">
+      <canvas id="globe-canvas"></canvas>
+      <div class="globe-label">Global network coverage</div>
     </div>
   </section>
 
